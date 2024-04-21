@@ -35,91 +35,11 @@
     <body
         class="flex items-center  justify-center bg-white md:bg-slate-300">
 
-        <div class=" w-full md:w-3/4 md:p-4">
+        <div class=" w-full md:w-[1000px] md:p-4">
 
             <!-- Mother-container -->
 
             <div class="flex flex-col md:flex-row  md:space-x-3">
-
-               <!-- about-me left-side -->
-               <div
-               class="md:p-0 p-4 bg-white rounded-md h-max sticky">
-
-               <div
-                   class="md:p-0 p-2  flex flex-col justify-center items-center  bg-white md:bg-white/50  md:h-max ">
-                   <!-- image -->
-                   <div
-                       class>
-                       <img
-                           class="sticky top-1 bg-white w-[300px] h-[310px]  md:w-auto md:h-auto p-1 md:p-0 border  border-[#3C688F] md:rounded-none md:border-none  rounded-full  "
-                           src="./static/logo.jpg" alt="image">
-                   </div>
-
-                   <!-- details WHo I am -->
-                   <div
-                       class="z-10  md:bg-white/50 bg-white   p-2 mt-3 items-center justify-center flex flex-col space-y-3">
-
-                       <div class="relative">
-                           <p
-                               class="text-3xl md:text-2xl pt-1 font-bold z-20 ">
-                               Mbugua<span class="text-[#3C688F]">
-                                   Kinyatti</span>
-
-                           </p>
-                           <span
-                               class="material-symbols-outlined absolute text-[#3C688F] p-1 rounded-full bg-white/50 top-[-10px]  right-[-27px] z-[-1]">
-                               verified
-                           </span>
-                       </div>
-
-                       <p
-                           class="text-sm rounded-full hover:cursor-pointer px-3 text-gray-500 bg-[#3C688F]/10  p-1 ">
-                           Software Developer
-                       </p>
-
-                       <!-- social media handles -->
-                       <div class="flex  space-x-3">
-                           <!-- linkedin -->
-                           <a
-                               href
-                               class="flex items-center justify-center md:justify-start space-x-1 hover:cursor-pointer "><i
-                                   class="fa-brands fa-linkedin hover:text-sky-600 font-bold text-3xl md:text-lg"></i>
-                           </a>
-                           <!-- instagram -->
-                           <a
-                               href
-                               class="flex items-center justify-center space-x-1 hover:cursor-pointer "><i
-                                   class="fa-brands fa-instagram hover:text-rose-600 font-bold text-3xl md:text-lg"></i>
-                           </a>
-                           <!-- tweeter -->
-                           <a
-                               href
-                               class="flex items-center justify-center space-x-1 hover:cursor-pointer "><i
-                                   class="fa-brands fa-twitter font-bold text-3xl md:text-lg hover:text-sky-600"></i>
-                           </a>
-                           <!-- github -->
-                           <a
-                               href
-                               class="flex items-center justify-center space-x-1 hover:cursor-pointer  "><i
-                                   class="fa-brands fa-github font-bold text-3xl md:text-lg"></i>
-                           </a>
-                           <!-- bitbucket -->
-                           <a
-                               href
-                               class="flex items-center justify-center space-x-1 hover:cursor-pointer "><i
-                                   class="fa-brands fa-bitbucket  hover:text-sky-600 text-3xl md:text-lg"></i>
-                           </a>
-                       </div>
-
-                       <!-- contact me -->
-                       <div
-                           class="text-md border border-[#3C688F] p-1 px-3 rounded-md w-full items-center justify-center flex">
-                           <p>Reach Out</p>
-                       </div>
-                   </div>
-
-               </div>
-               </div>
 
                 <!-- resume center -->
                 <div
@@ -208,7 +128,15 @@
                                                                 even gained an
                                                                 introduction to
                                                                 machine learning
-                                                                and AI.</p>
+                                                                and AI.
+
+                                                                <div class="text-sm text-[#3C688F]  flex w-max p-1 px-0 mt-1 space-x-2">
+                                                                    <div><i class="fa-solid fa-person-hiking font-bold"></i></div>
+                                                                    <div>Leadership,Teamwork and Collaboration </div>
+                                                                </div>
+
+
+                                                            </p>
                                                         </div>
                                                     </li>
 
@@ -271,14 +199,23 @@
                                                             mt-3 mb-1">Stack :
                                                             flask,
                                                             tailwindcss,
-                                                            sql, figma</p>
+                                                            sqllite, figma</p>
                                                         <p
                                                             class="text-sm text-gray-500  flex flex-wrap">
 
                                                             This project utilizes a role-based access control system to ensure data security. It leverages Flask for backend development and a frontend built with HTML, Jinja templating, and Tailwind CSS. To achieve a modern and user-friendly interface, I designed UI elements using Figma and incorporated icons from Font Awesome.
-                                                            <p class="text-sm text-[#48AC9A] font-bold flex w-max p-1 mt-2 border border-[#48AC9A] rounded-md">
-                                                                Design and Implementation, Jinja-templating, Backend
-                                                            </p>
+
+
+                                                            <div class="text-sm text-[#3C688F]  flex w-max p-1 mt-1 px-0 space-x-2">
+                                                                <div><i class="fa-solid fa-person-hiking font-bold"></i></div>
+                                                                <div> Design and Implementation, Jinja-templating, Backend</div>
+                                                            </div>
+
+
+
+
+
+
                                                         </p>
                                                     </a>
                                                 </li>
@@ -309,21 +246,61 @@
                                                             class="text-sm p-1 px-2 bg-[#3C688F]/70 text-white flex w-max rounded-md
                                                             mt-3 mb-1">Stack :
                                                             flask,
-                                                            tailwindcss,
-                                                            sql</p>
+                                                            bootstrap,
+                                                            sqllite</p>
                                                         <p
                                                             class="text-sm text-gray-500  flex flex-wrap">
                                                             A popular-Hotel database. Leveraging flask to create a system that will assist user to keep track of the favourite hotels and urls to these hotels (navigations to find them online)
 
-
-                                                            <p class="text-sm text-[#48AC9A] font-bold flex w-max p-1 mt-2 border border-[#48AC9A] rounded-md">
-                                                                Jinja-templating, Backend, Database operations
-                                                            </p>
+                                                        <!-- what learnt breadcrumb -->
+                                                            <div class="text-sm text-[#3C688F]  flex w-max p-1 px-0 mt-1 space-x-2">
+                                                                <div><i class="fa-solid fa-person-hiking font-bold"></i></div>
+                                                                <div>Jinja-templating, Backend, Database operations</div>
+                                                            </div>
 
 
                                                         </p>
                                                     </a>
                                                 </li>
+
+
+                                                 <!-- Check out more projects here -->
+                                                 <li
+                                                 class="relative flex gap-6 pb-4 items-baseline">
+                                                 <div
+                                                     class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[#3C688F]">
+                                                     <svg
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         width="12"
+                                                         height="12"
+                                                         class="bi bi-circle-fill fill-[#3C688F]">
+                                                         <circle cx="6"
+                                                             cy="6"
+                                                             r="6" />
+                                                     </svg>
+
+                                                 </div>
+                                                 <a
+                                                     href="https://github.com/paulwritescode"
+                                                     target="_blank"
+                                                     class="hover:bg-orange-50 rounded-md hover:cursor-pointer p-4 pt-1 rounded-md hover:shadow-md">
+                                                     <p
+                                                         class="font-bold text-[#3C688F]">More Projects</p>
+
+                                                     <p
+                                                         class="text-sm text-gray-500  flex flex-wrap">
+                                                         Check out other projects that I have worked on.
+
+
+                                                         <div class="text-sm text-[#3C688F]  flex w-max p-1 px-0 mt-1 space-x-1">
+                                                             <div><i class="fa-brands fa-github font-bold"></i></div>
+                                                             <div>paulwritescode</div>
+                                                         </div>
+
+
+                                                     </p>
+                                                 </a>
+                                                 </li>
 
                                             </ul>
 
