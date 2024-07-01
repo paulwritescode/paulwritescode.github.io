@@ -1,5 +1,7 @@
+import { DocumentArrowDownIcon, PhotoIcon } from "@heroicons/react/24/solid";
 import { Tooltip } from "@mui/material";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NameHolder() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,12 +33,12 @@ function NameHolder() {
   return (
     <div className={isDarkMode ? "dark" : ""}>
       <div className="flex flex-col items-center space-y-5">
-        <div className="py-2 text-4xl text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl lg:text-7xl min-h-vh w-max px-7">
+        <div className="py-2 text-4xl dark:text-gray-100 sm:text-5xl md:text-6xl lg:text-7xl min-h-vh w-max px-7">
           <div className="flex space-x-2">
             <Tooltip
               title="Light Mode"
               arrow
-              placement="top"
+              placement="left"
               {...alwaysVisibleTooltipProps}
             >
               <button
@@ -49,7 +51,7 @@ function NameHolder() {
             <Tooltip
               title="Dark Mode"
               arrow
-              placement="top"
+              placement="right"
               {...alwaysVisibleTooltipProps}
             >
               <button
@@ -61,28 +63,40 @@ function NameHolder() {
             </Tooltip>
           </div>
         </div>
-        <div className="flex items-center space-x-1 text-sm text-gray-700 lowercase dark:text-gray-300 sm:text-base md:text-lg lg:text-xl">
-          <span className="px-5 py-1 duration-300 ease-in-out delay-75 rounded-xl hover:bg-neutral-200 dark:hover:bg-neutral-700">
+        <div className="flex flex-col items-center text-sm lowercase md:flex-row sm:text-base md:text-lg lg:text-xl">
+          <Link
+            to={"resume"}
+            className="px-5 py-1 duration-300 ease-in-out delay-75 rounded-lg hover:bg-slate-50/10 "
+          >
             <Tooltip
-              title="Simple and Stupid"
+              title="Keep it Simple and Stupid"
               arrow
               placement="left"
               {...alwaysVisibleTooltipProps}
             >
-              <span>KISS</span>
+              <span className="flex items-center">
+                <DocumentArrowDownIcon className="w-5 h-5" />
+                resume
+              </span>
             </Tooltip>
-          </span>
+          </Link>
           <span> | </span>
-          <span className="px-5 py-1 duration-300 ease-in-out delay-75 rounded-xl hover:bg-neutral-200 dark:hover:bg-neutral-700">
+          <Link
+            to={""}
+            className="px-5 py-1 duration-300 ease-in-out delay-75 rounded-lg hover:bg-slate-50/10"
+          >
             <Tooltip
-              title="Pictorial"
+              title="seeing is believing"
               arrow
               placement="right"
               {...alwaysVisibleTooltipProps}
             >
-              <span>pictorial</span>
+              <span className="flex items-center">
+                <PhotoIcon className="w-5 h-5 mr-1" />
+                pictorial
+              </span>
             </Tooltip>
-          </span>
+          </Link>
         </div>
       </div>
     </div>
