@@ -32,7 +32,7 @@ function NameHolder() {
 
   return (
     <div className={isDarkMode ? "dark" : ""}>
-      <div className="flex flex-col items-center space-y-5">
+      <div className="flex flex-col items-center space-y-5 lowercase">
         <div className="py-2 text-4xl dark:text-gray-100 sm:text-5xl md:text-6xl lg:text-7xl min-h-vh w-max px-7">
           <div className="flex space-x-2">
             <Tooltip
