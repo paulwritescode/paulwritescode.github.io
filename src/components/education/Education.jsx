@@ -5,7 +5,7 @@ function Education() {
     <>
       <div className="p-4">
         <div className="pb-4 mb-4 border-b">
-          <h1 className="text-3xl font-bold text-cyan-400">
+          <h1 className="text-3xl font-bold text-emerald-400">
             B.Sc. Computer Science
           </h1>
           <h2 className="mt-1 text-base font-semibold">
