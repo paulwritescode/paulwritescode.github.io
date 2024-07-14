@@ -10,7 +10,7 @@ function Home() {
         <NameHolder />
         <div className="flex items-center justify-center mt-2 text-xs ">
           <FingerPrintIcon className="w-5 h-5 mr-1 " />
-          Built and designed by Kinyatti paul
+          Built and designed by Kinyatti Paul
         </div>
       </div>
     </>
