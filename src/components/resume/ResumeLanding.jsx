@@ -43,10 +43,15 @@ function ResumeLanding() {
               <BriefcaseIcon className="w-10 h-10 " />
               <p>Experience</p>
             </Link>
+            <div className="flex flex-col items-end p-12 text-2xl font-bold w-[250px] bg-slate-50/5 rounded-2xl hover:bg-slate-50/10 focus:border-r">
+            <a target="_blank" href="https://profile.codersrank.io/user/paulwritescode/">View my full resume</a>
+            </div> 
           </div>
         </div>
         <div>
-          <Outlet />
+          <div>
+            <a target="_blank" href="https://profile.codersrank.io/user/paulwritescode/">View my full resume</a>
+            </div>          <Outlet />
         </div>
       </div>
     </>
